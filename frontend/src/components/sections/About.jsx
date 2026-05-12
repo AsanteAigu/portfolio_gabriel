@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import './About.css'
@@ -73,6 +73,8 @@ export default function About() {
   const sectionRef = useRef(null)
   const leftRef = useRef(null)
   const rightRef = useRef(null)
+  const [expanded, setExpanded] = useState(false)
+
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.from(leftRef.current.children, {
@@ -117,8 +119,25 @@ export default function About() {
             <span className="about__headline-accent">problem solver.</span>
           </h2>
 
-          <p className="about__bio body-lg">{fullBio[0]}</p>
-          <p className="about__bio body-lg">{fullBio[1]}</p>
+          <div className={`about__full-bio ${expanded ? 'about__full-bio--open' : ''}`}>
+            {fullBio.map((para, i) => (
+              <p key={i} className="about__bio body-lg">{para}</p>
+            ))}
+          </div>
+
+          <button
+            className="about__read-more"
+            onClick={() => setExpanded(p => !p)}
+          >
+            {expanded ? 'Read less' : 'Read more'}
+            <svg
+              width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+              className={`about__read-more-icon ${expanded ? 'about__read-more-icon--up' : ''}`}
+            >
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
 
           <div className="about__highlights">
             {highlights.map(h => (

@@ -46,13 +46,6 @@
   line-height: 1.75;
 }
 
-/* Bio block — keeps paragraph, expand, and button together */
-.about__bio-block {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-4);
-}
-
 /* Expandable full bio */
 .about__full-bio {
   display: grid;
@@ -80,29 +73,20 @@
   font-size: var(--text-sm);
   font-weight: 600;
   font-family: inherit;
-  color: var(--color-text-primary);
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border-strong);
-  border-radius: var(--radius-full);
-  padding: var(--space-2) var(--space-4);
+  color: var(--color-accent-dark);
+  background: none;
+  border: none;
+  padding: 0;
   cursor: pointer;
-  width: fit-content;
-  margin-bottom: var(--space-2);
-  transition: border-color 0.25s var(--ease-out),
-              background-color 0.25s var(--ease-out),
-              transform 0.25s var(--ease-out);
+  transition: opacity 0.2s var(--ease-out);
 }
 
 .about__read-more:hover {
-  border-color: var(--color-accent);
-  background-color: var(--color-accent-light);
-  color: var(--color-accent-dark);
-  transform: translateY(-1px);
+  opacity: 0.75;
 }
 
 .about__read-more-icon {
   transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-  flex-shrink: 0;
 }
 
 .about__read-more-icon--up {

@@ -28,14 +28,14 @@ const IconStar = () => (
 const skills = ['Python', 'Machine Learning', 'C++', 'Data Science', 'SQL']
 
 export default function Hero() {
-  const sectionRef   = useRef(null)
-  const headlineRef  = useRef(null)
-  const subRef       = useRef(null)
-  const ctaRef       = useRef(null)
-  const scrollRef    = useRef(null)
-  const mainCardRef  = useRef(null)
+  const sectionRef = useRef(null)
+  const headlineRef = useRef(null)
+  const subRef = useRef(null)
+  const ctaRef = useRef(null)
+  const scrollRef = useRef(null)
+  const mainCardRef = useRef(null)
   const stackCardRef = useRef(null)
-  const badgeRef     = useRef(null)
+  const badgeRef = useRef(null)
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -43,8 +43,8 @@ export default function Hero() {
 
       // Text entrance
       tl.from(headlineRef.current.querySelectorAll('.hero__word'), {
-          opacity: 0, y: 64, duration: 0.85, stagger: 0.08, ease: 'power3.out',
-        })
+        opacity: 0, y: 64, duration: 0.85, stagger: 0.08, ease: 'power3.out',
+      })
         .from(subRef.current,
           { opacity: 0, y: 20, duration: 0.6, ease: 'power2.out' }, '-=0.35')
         .from(ctaRef.current.children,
@@ -54,7 +54,7 @@ export default function Hero() {
 
       // Cards entrance (staggered from right)
       tl.from(badgeRef.current,
-          { opacity: 0, x: 30, y: -10, duration: 0.6, ease: 'power2.out' }, '-=0.6')
+        { opacity: 0, x: 30, y: -10, duration: 0.6, ease: 'power2.out' }, '-=0.6')
         .from(mainCardRef.current,
           { opacity: 0, x: 40, duration: 0.7, ease: 'power2.out' }, '-=0.5')
         .from(stackCardRef.current,
