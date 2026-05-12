@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "company": "Brif Africa",
+    "role": "Content & Storytelling Intern",
+    "start": "Jan 2025",
+    "end": "Jun 2025",
+    "description": "Crafting compelling narratives and driving meaningful conversations through strategic storytelling for an African media platform.",
+    "highlights": [
+      "Developing content strategies that amplify authentic African voices and stories",
+      "Writing and editing editorial pieces that drive meaningful audience engagement",
+      "Collaborating with the team to shape Brif Africa's brand narrative"
+    ]
+  },
+  {
+    "company": "National Information Technology Agency (NITA)",
+    "role": "Software & IT Intern",
+    "start": "Nov 2025",
+    "end": "Dec 2025",
+    "description": "Hands-on internship at Ghana's premier government IT agency, contributing across software development and network infrastructure.",
+    "highlights": [
+      "Built a full-stack client booking website using HTML, CSS, JavaScript, and Node.js",
+      "Configured Cisco routers and managed LAN/WAN networks including IP addressing and subnetting",
+      "Reimaged and provisioned laptops with OS installations for staff use"
+    ]
+  }
+]

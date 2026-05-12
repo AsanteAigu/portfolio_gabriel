@@ -1,3 +1,34 @@
-# Placeholder — replace with your project data
-# See docs/CONTENT.md and docs/BACKEND.md for the full schema
-[]
+[
+  {
+    "slug": "sars-cov2-dimensionality-reduction",
+    "title": "SARS-CoV-2 Genomic Visualisation",
+    "tagline": "ML-based dimensionality reduction for viral genomic sequence data",
+    "description": "Collaborated with Matthew Scicluna (PhD researcher, MILA) to develop a machine learning-based alternative to traditional phylogenetic trees for representing SARS-CoV-2 genomic data. Implemented PCA and t-SNE in Python to produce accurate low-dimensional visualisations of viral sequence relationships — offering a computationally efficient and visually interpretable approach to tracking viral evolution.",
+    "tags": ["Python", "PCA", "t-SNE", "Machine Learning", "Bioinformatics"],
+    "year": 2023,
+    "url": "",
+    "github": "https://github.com/AsanteAigu",
+    "images": {
+      "thumbnail": "/assets/images/sars-cov2-thumb.webp",
+      "hero": "/assets/images/sars-cov2-hero.webp",
+      "gallery": []
+    },
+    "featured": true
+  },
+  {
+    "slug": "nita-client-booking",
+    "title": "NITA Client Booking System",
+    "tagline": "Full-stack appointment platform for Ghana's national IT agency",
+    "description": "Built a full-stack client booking website during an internship at the National Information Technology Agency (NITA), Ghana. The platform manages client appointment scheduling for IT services. Developed the complete frontend with HTML, CSS, and JavaScript, and the backend using Node.js — handling routing, form submissions, and data management.",
+    "tags": ["HTML", "CSS", "JavaScript", "Node.js", "Full-Stack"],
+    "year": 2025,
+    "url": "",
+    "github": "https://github.com/AsanteAigu",
+    "images": {
+      "thumbnail": "/assets/images/nita-thumb.webp",
+      "hero": "/assets/images/nita-hero.webp",
+      "gallery": []
+    },
+    "featured": true
+  }
+]

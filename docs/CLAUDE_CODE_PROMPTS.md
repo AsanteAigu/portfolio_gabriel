@@ -75,7 +75,7 @@ Write this in a plain .txt BEFORE building so you can paste into JSON files:
 ## Prompt 0.1 — Initialize the Project Scaffold
 
 ```
-I'm building a personal portfolio website for Ethan Nartey, Data Scientist & Robotics Engineer.
+I'm building a personal portfolio website for Gabriel Kwaku.
 
 Design inspiration: Cal.com — light gray background, white cards, big bold black typography, subtle card hover effects, professional and clean. NOT a dark portfolio.
 

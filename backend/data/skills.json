@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "category": "Languages",
+    "items": ["Python", "C++", "SQL", "JavaScript", "MATLAB"]
+  },
+  {
+    "category": "Data & ML",
+    "items": ["Pandas", "NumPy", "Matplotlib", "Scikit-learn", "PCA", "t-SNE"]
+  },
+  {
+    "category": "Web Development",
+    "items": ["HTML", "CSS", "Node.js", "Express", "React"]
+  },
+  {
+    "category": "Tools",
+    "items": ["Git", "GitHub", "Excel"]
+  },
+  {
+    "category": "Currently Learning",
+    "items": ["OpenCV", "Computer Vision", "Deep Learning"]
+  }
+]
