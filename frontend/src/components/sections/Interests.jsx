@@ -5,11 +5,80 @@ import './Interests.css'
 
 gsap.registerPlugin(ScrollTrigger)
 
+const IconBarChart = () => (
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <line x1="18" y1="20" x2="18" y2="10" />
+    <line x1="12" y1="20" x2="12" y2="4" />
+    <line x1="6" y1="20" x2="6" y2="14" />
+    <line x1="2" y1="20" x2="22" y2="20" />
+  </svg>
+)
+
+const IconDatabase = () => (
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <ellipse cx="12" cy="5" rx="9" ry="3" />
+    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+  </svg>
+)
+
+const IconRobot = () => (
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="3" y="11" width="18" height="10" rx="2" />
+    <circle cx="12" cy="5" r="2" />
+    <path d="M12 7v4" />
+    <line x1="8" y1="16" x2="8" y2="16" strokeWidth="2.5" />
+    <line x1="16" y1="16" x2="16" y2="16" strokeWidth="2.5" />
+    <path d="M8 21v-1" />
+    <path d="M16 21v-1" />
+  </svg>
+)
+
+const IconTrendingUp = () => (
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+    <polyline points="17 6 23 6 23 12" />
+  </svg>
+)
+
 const IconBrain = () => (
   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
     <path d="M12 2a4 4 0 0 1 4 4v1h1a3 3 0 0 1 3 3 3 3 0 0 1-3 3h-.5a4.5 4.5 0 0 1-4.5 4.5A4.5 4.5 0 0 1 7.5 13H7a3 3 0 0 1-3-3 3 3 0 0 1 3-3h1V6a4 4 0 0 1 4-4z" />
     <path d="M12 6v6" />
     <path d="M8 10h8" />
+  </svg>
+)
+
+const IconCpu = () => (
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="4" y="4" width="16" height="16" rx="2" />
+    <rect x="9" y="9" width="6" height="6" />
+    <line x1="9" y1="1" x2="9" y2="4" />
+    <line x1="15" y1="1" x2="15" y2="4" />
+    <line x1="9" y1="20" x2="9" y2="23" />
+    <line x1="15" y1="20" x2="15" y2="23" />
+    <line x1="20" y1="9" x2="23" y2="9" />
+    <line x1="20" y1="14" x2="23" y2="14" />
+    <line x1="1" y1="9" x2="4" y2="9" />
+    <line x1="1" y1="14" x2="4" y2="14" />
+  </svg>
+)
+
+const IconCode2 = () => (
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <polyline points="16 18 22 12 16 6" />
+    <polyline points="8 6 2 12 8 18" />
+    <line x1="12" y1="2" x2="12" y2="22" />
+  </svg>
+)
+
+const IconNetwork = () => (
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="16" y="16" width="6" height="6" rx="1" />
+    <rect x="2" y="16" width="6" height="6" rx="1" />
+    <rect x="9" y="2" width="6" height="6" rx="1" />
+    <path d="M5 16v-4h14v4" />
+    <path d="M12 12V8" />
   </svg>
 )
 
@@ -24,16 +93,67 @@ const IconSprout = () => (
 
 const interests = [
   {
+    id: 'data-science',
+    label: 'Data Science',
+    description: 'Extracting insight from complex datasets using statistical and computational methods.',
+    icon: <IconBarChart />,
+    color: '#3b82f6',
+  },
+  {
+    id: 'database-design',
+    label: 'Database Design',
+    description: 'Structuring data efficiently for scale, integrity, and fast retrieval.',
+    icon: <IconDatabase />,
+    color: '#8b5cf6',
+  },
+  {
+    id: 'robotics',
+    label: 'Robotics',
+    description: 'Building autonomous systems that perceive, reason, and act in the physical world.',
+    icon: <IconRobot />,
+    color: '#f97316',
+  },
+  {
+    id: 'quant-finance',
+    label: 'Quantitative Finance',
+    description: 'Applying mathematical models to markets, pricing, and portfolio strategy.',
+    icon: <IconTrendingUp />,
+    color: '#10b981',
+  },
+  {
     id: 'machine-learning',
     label: 'Machine Learning',
     description: 'Training models that learn patterns and generalise across unseen data.',
     icon: <IconBrain />,
+    color: '#ec4899',
+  },
+  {
+    id: 'ai',
+    label: 'Artificial Intelligence',
+    description: 'Designing intelligent systems that reason, plan, and adapt autonomously.',
+    icon: <IconCpu />,
+    color: '#6366f1',
   },
   {
     id: 'agriculture',
     label: 'Agriculture',
     description: 'Applying technology and data-driven methods to improve food systems and crop yield.',
     icon: <IconSprout />,
+    color: '#84cc16',
+  },
+  {
+    id: 'computer-networks',
+    label: 'Computer Networks',
+    description: 'Understanding how data moves — protocols, routing, and the infrastructure behind connected systems.',
+    icon: <IconNetwork />,
+    color: '#06b6d4',
+  },
+  {
+    id: 'software-engineering',
+    label: 'Software Engineering',
+    description: 'Building reliable, maintainable systems through clean architecture and thoughtful design.',
+    icon: <IconCode2 />,
+    color: '#ef4444',
   },
 ]
 
@@ -92,6 +212,7 @@ export default function Interests() {
               className={`interest-card ${active === item.id ? 'interest-card--active' : ''}`}
               onClick={() => handleSelect(item.id)}
               aria-pressed={active === item.id}
+              style={{ '--ic-color': item.color }}
             >
               <div className="interest-card__icon-wrap">
                 {item.icon}

@@ -10,7 +10,6 @@ const skills = [
   { category: 'Data & ML', items: ['Pandas', 'NumPy', 'Matplotlib', 'Scikit-learn', 'PCA', 't-SNE'] },
   { category: 'Web', items: ['HTML', 'CSS', 'Node.js', 'Express', 'React'] },
   { category: 'Tools', items: ['Git', 'GitHub', 'Excel'] },
-  { category: 'Also interested in', items: ['Data Science', 'Database Design', 'Robotics', 'Quantitative Finance', 'AI', 'Computer Networks', 'Software Engineering'] },
 ]
 
 const IconGradCap = () => (
