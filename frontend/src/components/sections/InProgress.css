@@ -2,6 +2,16 @@
   background-color: var(--color-bg);
 }
 
+/* Illustration fills the same image slot the shipped project cards use */
+.in-progress .project-card__image svg {
+  display: block;
+  transition: transform var(--dur-slow) var(--ease-out);
+}
+
+.in-progress .project-card:hover .project-card__image svg {
+  transform: scale(1.03);
+}
+
 /* Header — centered, matches .work__header */
 .in-progress__header {
   display: flex;
