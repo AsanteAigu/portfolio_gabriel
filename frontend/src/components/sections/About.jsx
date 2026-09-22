@@ -10,6 +10,7 @@ const skills = [
   { category: 'Data & ML', items: ['Pandas', 'NumPy', 'Matplotlib', 'Scikit-learn', 'PCA', 't-SNE'] },
   { category: 'Web', items: ['HTML', 'CSS', 'Node.js', 'Express', 'React'] },
   { category: 'Tools', items: ['Git', 'GitHub', 'Excel'] },
+  { category: 'Also interested in', items: ['Data Science', 'Database Design', 'Robotics', 'Quantitative Finance', 'AI', 'Computer Networks', 'Software Engineering'] },
 ]
 
 const IconGradCap = () => (
@@ -62,7 +63,7 @@ const fullBio = [
   `Nobody has a name for it yet. The American Dream is well-documented — a house, a car, a better life than your parents. But what do we call the African version? Financial freedom? Independence from systems built to keep us dependent? The best possible life carved out of circumstances that were never designed in our favour?`,
   `I don't have a clean answer. But I know what moves me.`,
   `I grew up watching Ghanaian children — brilliant, curious, capable — never quite believing they could be the ones to fix things. Not out of laziness, but out of a quiet resignation that the problems of this country belong to someone else to solve. That belief is the most dangerous thing I've ever encountered. My life's work, in whatever form it takes, is to dismantle it.`,
-  `I am a Machine Learning Engineer and Robotics enthusiast — with a foot in software engineering and a deep curiosity about the networks that hold it all together. But before the titles, I am someone shaped by three things: the smell of soil on my mother's trips to the village, the frustration of watching Ghana's economy bleed through preventable inefficiencies, and the stubborn conviction that technology — applied with intention — can change the trajectory of a nation.`,
+  `I am a Computer Engineering student who builds machine learning systems and robotics — with a foot in software engineering and a deep curiosity about the networks that hold it all together. But before the titles, I am someone shaped by three things: the smell of soil on my mother's trips to the village, the frustration of watching Ghana's economy bleed through preventable inefficiencies, and the stubborn conviction that technology — applied with intention — can change the trajectory of a nation.`,
   `In agriculture, I see robotics and machine learning not as replacements for the farmer, but as multipliers. Mechanised, intelligent, nature-friendly farming is not a fantasy. It is an engineering problem, and engineering problems have solutions.`,
   `In fintech and data, I see a different kind of battlefield — one fought with signals, noise, and the ability to tell them apart. Understanding markets, cleaning data, finding the patterns hidden inside the chaos of an economy: this is how you build stability that lasts beyond a single administration.`,
   `The networks that connect our systems, the software that powers them, the robots that extend human capability, the machine learning models that make sense of it all — these are not separate pursuits for me. They are four sides of the same mission.`,

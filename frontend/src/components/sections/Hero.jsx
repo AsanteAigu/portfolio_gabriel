@@ -84,9 +84,8 @@ export default function Hero() {
           </h1>
 
           <p className="hero__sub" ref={subRef}>
-            Machine Learning Engineer and Robotics enthusiast at the University of Ghana —
-            building technology at the intersection of AI, software, and systems,
-            with a stubborn conviction that it can change the trajectory of a nation.
+            Computer Engineering student at UoG building machine learning and
+            robotics for African agriculture.
           </p>
 
           <div className="hero__cta" ref={ctaRef}>
@@ -106,11 +105,6 @@ export default function Hero() {
             <div className="hero__stat">
               <span className="hero__stat-value">1st</span>
               <span className="hero__stat-label">Honours</span>
-            </div>
-            <div className="hero__stat-divider" />
-            <div className="hero__stat">
-              <span className="hero__stat-value">2+</span>
-              <span className="hero__stat-label">Projects</span>
             </div>
             <div className="hero__stat-divider" />
             <div className="hero__stat">
@@ -155,11 +149,6 @@ export default function Hero() {
               <div className="hero__vc-stat">
                 <span className="hero__vc-stat-value">2028</span>
                 <span className="hero__vc-stat-label">Grad Year</span>
-              </div>
-              <div className="hero__vc-stat-sep" />
-              <div className="hero__vc-stat">
-                <span className="hero__vc-stat-value">2+</span>
-                <span className="hero__vc-stat-label">Projects</span>
               </div>
               <div className="hero__vc-stat-sep" />
               <div className="hero__vc-stat">
