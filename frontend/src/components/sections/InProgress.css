@@ -1,0 +1,69 @@
+.in-progress {
+  background-color: var(--color-bg);
+}
+
+/* Header — centered, matches .work__header */
+.in-progress__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+}
+
+.in-progress__header .section-label {
+  justify-content: center;
+}
+
+.in-progress__header .section-label::before {
+  display: none;
+}
+
+.in-progress__headline {
+  margin: 0;
+}
+
+.in-progress__sub {
+  color: var(--color-text-secondary);
+  max-width: 52ch;
+}
+
+/* Grid — same shape as .work__grid */
+.in-progress__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-5);
+}
+
+@media (max-width: 700px) {
+  .in-progress__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Status badge — amber, distinct from the green "shipped" .project-card__type pill */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.status-badge--amber {
+  background-color: #fef3c7;
+  color: #b45309;
+  border: 1px solid rgba(217, 119, 6, 0.25);
+}
+
+/* Status line — the bit that gets updated every 2-3 weeks.
+   Kept visually distinct from .project-card__desc: smaller, muted, italic. */
+.project-card__status {
+  font-size: var(--text-sm);
+  font-style: italic;
+  color: var(--color-text-tertiary);
+  line-height: 1.5;
+}

@@ -4,6 +4,7 @@ import Education from '@/components/sections/Education'
 import Experience from '@/components/sections/Experience'
 import Interests from '@/components/sections/Interests'
 import Awards from '@/components/sections/Awards'
+import InProgress from '@/components/sections/InProgress'
 import Work from '@/components/sections/Work'
 import Contact from '@/components/sections/Contact'
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Experience />
       <Interests />
       <Awards />
+      <InProgress />
       <Work />
       <Contact />
     </main>
